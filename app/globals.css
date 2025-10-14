@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Sophos-inspired color palette */
+:root {
+  --sophos-dark: #0a0a0a;
+  --sophos-darker: #050505;
+  --sophos-light: #f8f8f8;
+  --sophos-accent: #3b82f6;
+  --sophos-accent-hover: #2563eb;
+  --sophos-success: #10b981;
+  --sophos-warning: #f59e0b;
+  --sophos-danger: #ef4444;
+  --sophos-muted: #6b7280;
+}
+
+/* Sophos Enterprise Theme */
+.sophos-gradient {
+  background: linear-gradient(135deg, var(--sophos-dark) 0%, var(--sophos-darker) 100%);
+}
+
+.captive-portal-card {
+  background: var(--sophos-darker);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.captive-portal-button {
+  background: var(--sophos-accent);
+  color: white;
+  border-radius: 6px;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.2s ease;
+}
+
+.captive-portal-button:hover {
+  background: var(--sophos-accent-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+}
+
+.captive-portal-input {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  border-radius: 6px;
+  padding: 0.75rem;
+  color: white;
+  transition: border-color 0.2s ease;
+}
+
+.captive-portal-input:focus {
+  outline: none;
+  border-color: var(--sophos-accent);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.captive-portal-status-connected {
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--sophos-success);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.captive-portal-status-disconnected {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--sophos-danger);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+/* Animations */
+@keyframes sophos-fade-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.sophos-fade-in {
+  animation: sophos-fade-in 0.3s ease-out;
+}
+
+/* Admin Panel Specific */
+.admin-panel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.admin-card {
+  background: rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.2s ease;
+}
+
+.admin-card:hover {
+  border-color: rgba(59, 130, 246, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Loading states */
+.sophos-loading {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(59, 130, 246, 0.3);
+  border-radius: 50%;
+  border-top-color: var(--sophos-accent);
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Utility classes */
+.text-sophos-muted { color: var(--sophos-muted); }
+.bg-sophos-dark { background-color: var(--sophos-dark); }
+.bg-sophos-darker { background-color: var(--sophos-darker); }
+.border-sophos-accent { border-color: var(--sophos-accent); }

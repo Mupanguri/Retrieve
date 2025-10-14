@@ -1,0 +1,14 @@
+{
+  "/api/admin/setup/route": "app/api/admin/setup/route.js",
+  "/api/ip-detect/route": "app/api/ip-detect/route.js",
+  "/api/sessions/[id]/route": "app/api/sessions/[id]/route.js",
+  "/api/sessions/route": "app/api/sessions/route.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/admin/login/page": "app/admin/login/page.js",
+  "/admin/settings/page": "app/admin/settings/page.js",
+  "/admin/setup/page": "app/admin/setup/page.js",
+  "/admin/page": "app/admin/page.js",
+  "/connected/page": "app/connected/page.js",
+  "/page": "app/page.js",
+  "/portal/page": "app/portal/page.js"
+}
