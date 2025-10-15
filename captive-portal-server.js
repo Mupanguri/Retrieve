@@ -12,7 +12,7 @@ const CONFIG = {
 
 const PORTAL_URL = `http://${CONFIG.PORTAL_IP}:${CONFIG.PORTAL_PORT}`;
 
-console.log('\n🚀 Starting HICC Captive Portal System...\n');
+console.log('\n🚀 Starting Retrieve Portal System...\n');
 console.log('⚠️  NOTE: Using alternative ports to avoid conflicts:');
 console.log(`   DNS Port: ${CONFIG.DNS_PORT} (instead of 53)`);
 console.log(`   HTTP Port: ${CONFIG.HTTP_PORT} (instead of 80)\n`);
@@ -120,7 +120,7 @@ const httpServer = http.createServer((req, res) => {
         res.writeHead(200, {'Content-Type': 'text/html'});
         res.end(`
             <html>
-            <head><title>HICC Captive Portal</title></head>
+            <head><title>Retrieve Captive Portal</title></head>
             <body style="font-family: Arial; text-align: center; padding: 50px;">
                 <h1>✅ Captive Portal System Active</h1>
                 <p>Portal is running at: <a href="${PORTAL_URL}">${PORTAL_URL}</a></p>
@@ -225,7 +225,7 @@ statusServer.listen(CONFIG.STATUS_PORT, () => {
 // STARTUP COMPLETE
 // ============================================
 console.log('═══════════════════════════════════════════════════════');
-console.log('🎯 HICC Captive Portal System is READY!');
+console.log('🎯 Retrieve Captive Portal System is READY!');
 console.log('═══════════════════════════════════════════════════════');
 console.log(`📍 Portal URL: ${PORTAL_URL}`);
 console.log(`🔒 Devices will be redirected to the portal`);
