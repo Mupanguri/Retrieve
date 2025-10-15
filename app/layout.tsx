@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "HICC Guest Network",
-  description: "Secure captive portal for HICC Hotel guests",
+  title: "Victim Guest Network",
+  description: "Secure captive portal for Victim guests",
 };
 
 export default function RootLayout({
@@ -28,8 +28,8 @@ export default function RootLayout({
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/components/images/rtg-logo.png" type="image/png" />
-        <title>HICC Guest Network</title>
-        <meta name="description" content="Secure captive portal for HICC Hotel guests" />
+        <title>Victim Guest Network</title>
+        <meta name="description" content="Secure captive portal for Victim guests" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

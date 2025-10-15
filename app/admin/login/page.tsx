@@ -237,7 +237,7 @@ export default function AdminLogin() {
         <div className="container">
           <div className="card">
             <div className="header">
-              HICC Guest Network
+              Victim Guest Network
             </div>
             <div className="content">
               <div className="title-section">
@@ -251,7 +251,7 @@ export default function AdminLogin() {
                   </svg>
                 </div>
                 <h1 className="page-title">Admin Portal</h1>
-                <p className="page-subtitle">HICC User Portal Administration</p>
+                <p className="page-subtitle">Victim User Portal Administration</p>
               </div>
 
               <form onSubmit={handleLogin}>

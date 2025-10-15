@@ -300,8 +300,8 @@ export function TermsDialog({ open, onOpenChange, onReadComplete }: TermsDialogP
               <div className="timestamp">
                 Last Updated: {new Date().toLocaleDateString()}
                 <br />
-                Version 2.1 - HICC Guest Network Terms
-                <br />© {new Date().getFullYear()} HICC Hotel Chain. All rights reserved.
+                Version 2.1 - Victim Guest Network Terms
+                <br />© {new Date().getFullYear()} Victim Network. All rights reserved.
               </div>
             </div>
           </div>

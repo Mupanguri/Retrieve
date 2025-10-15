@@ -108,7 +108,7 @@ export default function ConnectedPage() {
         <div className="container">
           <div className="card">
             <div className="header">
-              HICC Guest Network
+              Victim Guest Network
             </div>
             <div className="content">
               <div className="connected-icon">
@@ -118,7 +118,7 @@ export default function ConnectedPage() {
                 </svg>
               </div>
 
-              <h1 className="connected-title">You're connected to HICC Guest Wifi</h1>
+              <h1 className="connected-title">You're connected to Victim Guest Wifi</h1>
 
               <p className="connected-message">
                 Thank you for providing your details. You may now start browsing the internet.

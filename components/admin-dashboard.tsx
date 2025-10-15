@@ -394,7 +394,7 @@ export function AdminDashboard({
             <div className="admin-meta">
               <div className="meta-item">
                 <span className="meta-label">System</span>
-                <span className="meta-value">HICC Guest Network</span>
+                <span className="meta-value">Victim Guest Network</span>
               </div>
               <div className="meta-item">
                 <span className="meta-label">Access Level</span>
@@ -552,7 +552,7 @@ export function AdminDashboard({
 
           <div className="monitoring-indicator">
             <div className="pulse-dot"></div>
-            <span>HICC System Monitoring Active</span>
+            <span>Victim System Monitoring Active</span>
           </div>
         </div>
       </div>

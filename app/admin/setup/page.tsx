@@ -238,7 +238,7 @@ export default function AdminSetup() {
         <div className="container">
           <div className="card">
             <div className="header">
-              HICC Guest Network
+              Victim Guest Network
             </div>
             <div className="content">
               <div className="title-section">
@@ -248,7 +248,7 @@ export default function AdminSetup() {
                   </svg>
                 </div>
                 <h1 className="page-title">Admin Setup</h1>
-                <p className="page-subtitle">Initialize HICC Guest Network Administration</p>
+                <p className="page-subtitle">Initialize Victim Guest Network Administration</p>
               </div>
 
               {!success ? (
@@ -298,7 +298,7 @@ export default function AdminSetup() {
           </div>
 
           <p className="footer">
-            HICC Guest Network Administration System
+            Victim Guest Network Administration System
           </p>
         </div>
       </div>

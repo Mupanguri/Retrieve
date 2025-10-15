@@ -337,14 +337,14 @@ export default function CaptivePortal() {
         <div className="container">
           <div className="card">
             <div className="header">
-              HICC Guest Network
+              Victim Guest Network
             </div>
             <div className="content">
               {/* RTG Logo in top design */}
               <div className="rtg-logo-container">
                 <img
                   src="/components/images/rtg-logo.png"
-                  alt="RTG Network Logo"
+                  alt="Victim Network Logo"
                   className="rtg-logo"
                 />
               </div>
