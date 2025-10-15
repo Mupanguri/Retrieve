@@ -1,7 +1,7 @@
 # 📶 Victim Guest Network - Tenda TX2 Pro Router Setup Guide
 
 ## 🎯 Overview
-This guide specifically covers setting up captive portal functionality on your **Tenda TX2 Pro WiFi 6 Router** to automatically serve your HICC Guest Network portal when users connect to your WiFi.
+This guide specifically covers setting up captive portal functionality on your **Tenda TX2 Pro WiFi 6 Router** to automatically serve your Victim Guest Network portal when users connect to your WiFi.
 
 ---
 
@@ -42,7 +42,7 @@ This guide specifically covers setting up captive portal functionality on your *
 
 3. **First-Time Setup:**
    - Update firmware if prompted
-   - Set timezone: **Africa/Harare**
+   - Set timezone:
    - Change default password: **Use strong password**
 
 ---
@@ -92,7 +92,7 @@ This guide specifically covers setting up captive portal functionality on your *
 1. **Navigate:** Wireless → Wireless Settings
 2. **2.4GHz WiFi:**
    ```
-   WiFi Name (SSID): HICC-Guest-2.4
+   WiFi Name (SSID): Victim-Guest-2.4
    Security: WPA3-SAE
    Password: (set strong password)
    Hide SSID: Disabled
@@ -101,7 +101,7 @@ This guide specifically covers setting up captive portal functionality on your *
 
 3. **5GHz WiFi:**
    ```
-   WiFi Name (SSID): HICC-Guest-5G
+   WiFi Name (SSID): Victim-Guest-5G
    Security: WPA3-SAE
    Password: (set strong password)
    Hide SSID: Disabled
@@ -110,7 +110,7 @@ This guide specifically covers setting up captive portal functionality on your *
 
 4. **6GHz WiFi:** (if available)
    ```
-   WiFi Name (SSID): HICC-Guest-6G
+   WiFi Name (SSID): Victim-Guest-6G
    Security: WPA3-SAE
    Password: (set strong password)
    Hide SSID: Disabled
@@ -227,12 +227,12 @@ This guide specifically covers setting up captive portal functionality on your *
 ### Step 10: Update Portal Configuration
 
 1. **Edit `app/page.tsx`:**
-   - Change certificate link: `/components/images/rtg-logo.png/`
+   - Change certificate link: `/components/images/logo.png/`
    - Update certificate download URL if needed
 
 2. **Test Internal Access:**
    - Browser: `http://192.168.1.100:3000`
-   - Should show HICC portal with RTG logo
+   - Should show Victim portal with logo
 
 ---
 
@@ -261,7 +261,7 @@ This guide specifically covers setting up captive portal functionality on your *
 ### Step 12: Complete Test Process
 
 1. **Connect Test Device:**
-   - Connect to `HICC-Guest-2.4` or `HICC-Guest-5G`
+   - Connect to `Victim-Guest-2.4` or `HICC-Guest-5G`
    - Device should get IP in 192.168.1.x range
 
 2. **Auto Redirection:**
@@ -275,7 +275,7 @@ This guide specifically covers setting up captive portal functionality on your *
    - Click "Sign in"
 
 4. **Post-Authentication:**
-   - Redirect to success page: "You're connected to HICC Guest Wifi"
+   - Redirect to success page: "You're connected to Victim Guest Wifi"
    - Clicking "Start Browsing" goes to internet
    - Full internet access restored
 
@@ -402,7 +402,7 @@ Solution:
 
 ## 🎉 **Tenda TX2 Pro Setup Complete!**
 
-Your **HICC Guest Network** is now fully integrated with your Tenda TX2 Pro router! The captive portal will automatically serve your professional sign-in page with RTG branding to all WiFi guests.
+Your **Victim Guest Network** is now fully integrated with your Tenda TX2 Pro router! The captive portal will automatically serve your professional sign-in page with RTG branding to all WiFi guests.
 
 ### 📋 **Final Configuration Summary:**
 - ✅ **WiFi Networks:** HICC-Guest-2.4, 5G, 6G configured
@@ -414,4 +414,4 @@ Your **HICC Guest Network** is now fully integrated with your Tenda TX2 Pro rout
 - ✅ **Monitoring:** Built-in router statistics
 - ✅ **Security:** WPA3 encryption and access controls
 
-**Ready to serve WiFi guests with professional HICC branding! 🚀**
+**Ready to serve WiFi guests with professional Victim branding! 🚀**
